@@ -5,19 +5,26 @@
     font-style: normal;
 
 }
-
-header {
+                                    /* ОФОРМЛЕНИЕ МЕНЮ И ЕГО ЭЛЕМЕНТОВ*/
+.main-menu {
+    background-color: darksalmon;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    margin-top: 40px;
+    padding-left: 20px;
     font-family: Nunito, Arial, sans-serif, serif;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 .contacts {
     display: flex;
     flex-flow: column nowrap;
+    padding-right: 15px;
 }
 .menu {
     flex-grow: 1;
@@ -31,11 +38,13 @@ header {
     list-style: none;
 }
 .menu li {
+    border: 1px solid black;
     margin-right: 20px;
 }
 .menu li:hover {
     transform: scale(105%);
     transition: 1s;
+    background-color: rgba(255, 77, 77, 0.8);
 }
 
 .menu li:last-child {
@@ -43,11 +52,14 @@ header {
 }
 
 .menu a {
+    color: black;
+    text-decoration: none;
     padding: 8px 10px;
 }
+
 .logo {
     background-image: url(../Images/schoolLogo.png);
-    margin-right: 30px;
+    margin: 20px;
     width: 343px;
     height: 61px;
 }
@@ -55,7 +67,14 @@ header {
  transform: scale(105%);
     transition: 1s;
 }
+.contacts a {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
 .contacts:hover {
     transform: scale(105%);
     transition: 1s;
+    background-color: rgba(255, 77, 77, 0.8);
 }
+                                         /* */
