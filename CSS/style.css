@@ -7,7 +7,7 @@
 }
                                     /* ОФОРМЛЕНИЕ МЕНЮ И ЕГО ЭЛЕМЕНТОВ*/
 .main-menu {
-    background-color: darksalmon;
+    background-color: rgba(255, 0, 0, 30%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 40px;
     margin-top: 40px;
@@ -22,9 +22,14 @@
 }
 
 .contacts {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-right: 15px;
+    margin: 20px;
+}
+.contacts a {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 2px;
+    background-color: white;
+    color: black;
 }
 .menu {
     flex-grow: 1;
@@ -39,12 +44,13 @@
 }
 .menu li {
     border: 1px solid black;
+    background-color: rgba(255, 255, 255, 90%);
     margin-right: 20px;
 }
 .menu li:hover {
     transform: scale(105%);
     transition: 1s;
-    background-color: rgba(255, 77, 77, 0.8);
+    background-color: rgba(255, 77, 77, 80%);
 }
 
 .menu li:last-child {
@@ -66,11 +72,6 @@
 .logo:hover {
  transform: scale(105%);
     transition: 1s;
-}
-.contacts a {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
 }
 .contacts:hover {
     transform: scale(105%);
