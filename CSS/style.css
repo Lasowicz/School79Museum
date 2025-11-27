@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Nunito, Arial, sans-serif, serif;
+    src: url(../Fonts/Nunito-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+    font-family: Nunito, Arial, sans-serif, serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+}
+.contacts {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu {
+    flex-grow: 1;
+}
+
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    padding: 8px 10px;
+}
+.logo {
+    background-image: url(../Images/schoolLogo.png);
+    margin-right: 30px;
+    width: 343px;
+    height: 61px;
+}
+.logo:hover {
+ transform: scale(105%);
+    transition: 1s;
+}
