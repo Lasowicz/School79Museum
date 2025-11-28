@@ -6,9 +6,15 @@
 
 }
                                     /* ОФОРМЛЕНИЕ МЕНЮ И ЕГО ЭЛЕМЕНТОВ*/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .main-menu {
-    background-color: rgba(255, 0, 0, 30%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: darkred;
     height: 40px;
     margin-top: 40px;
     padding-left: 20px;
@@ -18,7 +24,7 @@
     justify-content: flex-start;
     align-items: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.19);
+
 }
 
 .contacts {
@@ -44,7 +50,7 @@
 }
 .menu li {
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 90%);
+    background-color: white;
     margin-right: 20px;
 }
 .menu li:hover {
@@ -69,13 +75,32 @@
     width: 343px;
     height: 61px;
 }
+.collage {
+    border: 1px solid black;
+    background-image: url(../Images/header_collage.png);
+    height: 61px;
+    width: 1150px;
+}
+
 .logo:hover {
- transform: scale(105%);
+ transform: scale(102%);
     transition: 1s;
 }
 .contacts:hover {
-    transform: scale(105%);
+    transform: scale(102%);
     transition: 1s;
     background-color: rgba(255, 77, 77, 0.8);
 }
+.collage:hover {
+    transform: scale(102%);
+    transition: 1s;
+}
+
                                          /* */
+
+.main img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
