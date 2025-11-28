@@ -69,20 +69,20 @@ header {
     padding: 8px 10px;
 }
 
-.logo {
+#logo {
     background-image: url(../Images/schoolLogo.png);
     margin: 20px;
     width: 343px;
     height: 61px;
 }
-.collage {
+#collage {
     border: 1px solid black;
     background-image: url(../Images/header_collage.png);
     height: 61px;
     width: 1150px;
 }
 
-.logo:hover {
+#logo:hover {
  transform: scale(102%);
     transition: 1s;
 }
@@ -91,16 +91,9 @@ header {
     transition: 1s;
     background-color: rgba(255, 77, 77, 0.8);
 }
-.collage:hover {
+#collage:hover {
     transform: scale(102%);
     transition: 1s;
 }
 
                                          /* */
-
-.main img {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
