@@ -15,33 +15,32 @@ header {
 
 .main-menu {
     background-color: darkred;
-    height: 40px;
+    height: 60px;
     margin-top: 40px;
     padding-left: 20px;
     font-family: Nunito, Arial, sans-serif, serif;
+    font-weight: bold;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     text-transform: uppercase;
-
 }
 
 .contacts {
     margin: 20px;
 }
 .contacts a {
-    border: 1px solid black;
     text-decoration: none;
     padding: 2px;
-    background-color: white;
-    color: black;
+    color: white;
 }
 .menu {
     flex-grow: 1;
 }
 
 .menu ul {
+    text-decoration: none;
     display: flex;
     flex-flow: row nowrap;
     margin: 0;
@@ -49,22 +48,12 @@ header {
     list-style: none;
 }
 .menu li {
-    border: 1px solid black;
-    background-color: white;
     margin-right: 20px;
-}
-.menu li:hover {
-    transform: scale(105%);
-    transition: 1s;
-    background-color: rgba(255, 77, 77, 80%);
-}
-
-.menu li:last-child {
-    margin-right: 0;
+    text-decoration: none;
 }
 
 .menu a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 8px 10px;
 }
@@ -80,20 +69,11 @@ header {
     background-image: url(../Images/header_collage.png);
     height: 61px;
     width: 1150px;
+    margin-right: 10px;
 }
 
-#logo:hover {
+.contacts:hover, .menu li:hover, #logo:hover,  #collage:hover {
  transform: scale(102%);
     transition: 1s;
 }
-.contacts:hover {
-    transform: scale(102%);
-    transition: 1s;
-    background-color: rgba(255, 77, 77, 0.8);
-}
-#collage:hover {
-    transform: scale(102%);
-    transition: 1s;
-}
-
                                          /* */
