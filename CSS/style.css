@@ -84,22 +84,22 @@ header {
     display: flex;
     align-items: center;
     padding: 0 20px;
+
 }
-#memorable_and_history_date{
+.memorable_and_history_date{
     font-family: "Times New Roman", Arial, sans-serif, serif;
     color: white;
     font-size: 19px;
     background-color: darkred;
-    text-align: center;
     height: 50px;
     width: 350px;
-    cursor: pointer;
-    position: fixed;
     right: 100px;
+    position: fixed;
+    margin-right: -80px;
     top: 50%;
-
+   z-index: 1000;
 }
-#memorable_and_history_date:hover {
+.memorable_and_history_date:hover {
     transform: scale(102%);
     transition: 1s;
 }
