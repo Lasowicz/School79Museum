@@ -107,6 +107,22 @@ header {
 /*BASEMENT*/
 
 .basement {
+    display: flex;
     background-color: darkred;
     height: 50px;
+}
+.basement a {
+    font-family: "Nunito", Arial, sans-serif, serif;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#basement-text:hover {
+    transform: scale(102%);
+    transition: 1s;
 }

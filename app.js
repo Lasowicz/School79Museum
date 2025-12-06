@@ -9,7 +9,7 @@ collage.addEventListener("click", function () {
 })
 
                                 //Слушатели на клики по логотипу и коллажу
-const button_memorable_and_history_date = document.getElementById('memorable_and_history_date');
+const button_memorable_and_history_date = document.getElementsByClassName('memorable_and_history_date');
 button_memorable_and_history_date.addEventListener("click", function () {
 console.log("memorable_and_history_date");
 })
