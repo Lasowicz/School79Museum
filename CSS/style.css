@@ -1,3 +1,4 @@
+/* ШРИФТЫ ДЛЯ СТРАНИЦЫ*/
 @font-face {
     font-family: Nunito, Arial, sans-serif, serif;
     src: url(../Fonts/Nunito-Regular.woff2);
@@ -5,15 +6,63 @@
     font-style: normal;
 
 }
-/* ОФОРМЛЕНИЕ МЕНЮ И ЕГО ЭЛЕМЕНТОВ*/
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+/* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
+.header-area{
+    width: 100%;
+    box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#logo {
+    background-image: url(../Images/schoolLogo.png);
+    background-size: contain; /* Сохраняет пропорции */
+    background-repeat: no-repeat;
+    height: 61px;
+    min-width: 100px; /* Минимум для маленьких экранов */
+    flex: 1 1 auto;
+}
+#collage {
+    background-image: url(../Images/header_collage.png);
+    background-size: cover; /* Заполняет всю область */
+    background-repeat: no-repeat;
+    height: 61px;
+    flex: 2 1 auto; /* Занимает больше места */
+    min-width: 200px;
+}
+
+/* Адаптивные правила для Logo and collage*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* На мобильных — вертикально */
+        align-items: flex-start;
+    }
+
+    #logo, #collage {
+        width: 100%; /* На всю ширину */
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #logo {
+        width: 343px; /* Исходный размер */
+    }
+
+    #collage {
+        width: 1150px; /* Исходный размер */
+    }
+}
+
+/*ГЛАВНОЕ МЕНЮ - ЭКСПОЗИЦИЯ - АРТЕФАКТЫ - БЕССМЕРТНЫЙ ПОЛК - КРАТКАЯ СПРАВКА - МУЗЕЙ В ЛИЦАХ*/
 .main-menu {
+    margin-top: 5px;
     background-color: darkred;
     height: 60px;
     font-family: Nunito, Arial, sans-serif, serif;
@@ -32,42 +81,37 @@ header {
     text-decoration: none;
     padding: 2px;
     color: white;
+    display: block;
+    text-align: center;
 }
 .menu {
     flex-grow: 1;
 }
 
 .menu ul {
+    padding: 0;
     text-decoration: none;
     display: flex;
     flex-flow: row nowrap;
     margin: 0;
-    padding: 0;
     list-style: none;
 }
 .menu li {
     margin-right: 20px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
     padding: 8px 10px;
-}
-
-#logo {
-    background-image: url(../Images/schoolLogo.png);
-    margin: 20px;
-    width: 343px;
-    height: 61px;
-}
-#collage {
-    border: 1px solid black;
-    background-image: url(../Images/header_collage.png);
-    height: 61px;
-    width: 1150px;
-    margin-right: 10px;
+    display: block;
+    text-align: center;
+    min-width: 100px;
 }
 
 .contacts:hover, .menu li:hover, #logo:hover,  #collage:hover {
@@ -75,17 +119,17 @@ header {
     transition: 1s;
 }
 
-/*MAIN CONTENT*/
+/*MAIN CONTENT ФОТО С ШАЙМУРАТОВЫМ*/
 .main-content {
     background-image: url(../Images/Shaimuratov.jpeg);
     height: 924px;
     background-repeat: no-repeat;
     width: 921px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 0 20px;
-
 }
+
 .memorable_and_history_date{
     font-family: "Times New Roman", Arial, sans-serif, serif;
     color: white;
@@ -97,7 +141,8 @@ header {
     position: fixed;
     margin-right: -80px;
     top: 50%;
-   z-index: 1000;
+    z-index: 1000;
+
 }
 .memorable_and_history_date:hover {
     transform: scale(102%);
