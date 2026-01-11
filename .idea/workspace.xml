@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2272d15-69c9-4bdc-b177-6e3ad632bb5a" name="Changes" comment="Добавил basement">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/School79Museum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/School79Museum.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Shaimuratov.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +99,8 @@
       <workItem from="1767959034231" duration="786000" />
       <workItem from="1767967852047" duration="30000" />
       <workItem from="1768042326493" duration="6105000" />
+      <workItem from="1768052030679" duration="3220000" />
+      <workItem from="1768122851707" duration="9544000" />
     </task>
     <task id="LOCAL-00001" summary="27.11.2025&#10;Создал заготовку для меню под сайт музея школы №79">
       <option name="closed" value="true" />

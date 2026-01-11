@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>МАОУ Школа №79 Музей "Обелиск"</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -29,15 +31,54 @@
         <a href="tel:+7(347)263-51-06">Приемная</a>
     </div>
 </div>
-<div class="main-content">
-    <button class= "memorable_and_history_date">Календарь исторических и памятных дат
-    </button>
+                                                 <!--MAIN CONTENT-->
+<div class="main_content">
+    <div id="combat_operations" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_combat_operations.png" alt="Боевые действия" data-tippy-content='Боевые действия'></a>
+    </div>
+    <div id="nazi_atrocities" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_nazi_atrocities.png" alt="Зверства нацистов" data-tippy-content='Зверства нацистов'></a>
+    </div>
+    <div id="people_in_war" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_people_in_war.png" alt="Люди на войне" data-tippy-content='Люди на войне'></a>
+    </div>
+    <div id="war_consequences" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_war_consequences.png" alt="Последствия войны" data-tippy-content='Последствия войны'></a>
+    </div>
+    <div id="country_in_war" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_country_in_war.png" alt="Работники тыла" data-tippy-content='Работники тыла'></a>
+    </div>
+    <div id="allies" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_allies.png" alt="Союзники" data-tippy-content='Союзники'></a>
+    </div>
+    <div id="veterans" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_veterans.jpg" alt="Ветераны" data-tippy-content='Ветераны'></a>
+    </div>
+    <div id="victory_marshals" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_victory_marshals.webp" alt="Маршалы победы" data-tippy-content='Маршалы Победы'></a>
+    </div>
+    <div id="war_technique" class="gallery-item">
+        <a href="#"><img src="Images/Main_content_technique.jpg" alt="Военная техника" data-tippy-content='Военная техника'></a>
+    </div>
 </div>
+                                        <!--MODAL WINDOW FOR MAIN CONTENT-->
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modal-img" src="" alt="">
+        <div id="modal-caption"></div>
+    </div>
+</div>
+
 <div class ="basement">
     <a id='link1'
        href="https://yandex.ru/maps/-/CLgKEAIW" target="_blank">
-    <p id="basement-text">Адрес: Уфа, ул. Борисоглебская 16 </p></a>
+    <p id="basement-text">Адрес: г. Уфа, ул. Борисоглебская, 16 </p></a>
 </div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 <script src = "app.js"></script>
 </body>
 </html>
