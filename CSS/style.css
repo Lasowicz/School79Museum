@@ -211,25 +211,66 @@
     color: #555;
 }
 
-/*BASEMENT*/
+/*FOTTER*/
 
-.basement {
-    display: flex;
-    background-color: darkred;
-    height: 50px;
-}
-.basement a {
+.footer {
     font-family: "Nunito", Arial, sans-serif, serif;
     text-decoration: none;
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
+    background-color: darkred;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;      /* центрирует по вертикали внутри ячейки */
+    justify-items: center;
 }
 
-#basement-text:hover {
-    transform: scale(102%);
+.icon_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.icon_wrapper img {
+    padding-top: 0;
+    max-width: 100%;
+    max-height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+.map_caption {
+    margin-top: 5px;
+    font-size: 16px;
+    color: white;
+    white-space: nowrap;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon_wrapper:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+#post_adress:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+#e-mail:hover {
+    transform: scale(1.05);
     transition: 1s;
 }
