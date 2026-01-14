@@ -281,6 +281,11 @@
 }
 
 #e-mail:hover {
-    transform: scale(1.05);
+    rotate: 360deg;
+    transition: 1s;
+}
+
+#vk:hover {
+    rotate: 360deg;
     transition: 1s;
 }
