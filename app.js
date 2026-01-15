@@ -20,17 +20,7 @@ const closeBtn = document.querySelector('.modal-close');
 const galleryItems = document.querySelectorAll('.gallery-item');
 
                                 // Обработчик клика на изображение
-galleryItems.forEach(item => {
-item.addEventListener('click', function(e) {
-e.preventDefault(); // Отменяем переход по ссылке
-
-                                        // Получаем данные из текущего элемента
- const imgSrc = this.querySelector('img').src;
- const imgAlt = this.querySelector('img').alt;
-
-                                        // Заполняем модальное окно
- modalImg.src = imgSrc;
- modalCaption.textContent = imgAlt;
+galleryItems.forEach(item => { item.addEventListener('click', function(e) { e.preventDefault(); // Отменяем переход по ссылке
 
                                         // Показываем модальное окно
  modal.style.display = 'flex';

@@ -188,20 +188,20 @@
 
 /* Содержимое модального окна */
 .modal-content {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 800px;
+    max-height: 600px;
+    overflow: hidden;
     position: relative;
-    overflow: auto;
 }
 
 /* Кнопка закрытия */
 .modal-close {
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 5px;
+    top: -5px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -210,9 +210,12 @@
 
 /* Изображение в модалке */
 #modal-img {
-    max-width: 100%;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 400px; /* фиксированная высота */
+    background-color: #f0f0f0; /* светло‑серый фон вместо изображения */
+    object-fit: contain;
 }
 
 /* Подпись под изображением */
@@ -258,7 +261,7 @@
     display: block;
 }
 
-.map_caption {
+#map_caption {
     margin-top: 5px;
     font-size: 16px;
     color: white;
@@ -275,17 +278,17 @@
     transition: 1s;
 }
 
-#post_adress:hover {
+.post_adress:hover {
     transform: scale(1.05);
     transition: 1s;
 }
 
-#e-mail:hover {
+.e-mail:hover {
     rotate: 360deg;
     transition: 1s;
 }
 
-#vk:hover {
+.vk:hover {
     rotate: 360deg;
     transition: 1s;
 }
