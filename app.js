@@ -7,8 +7,6 @@ const collage = document.getElementById("collage");
 collage.addEventListener("click", function () {
     window.open('https://ru.ruwiki.ru/wiki/Великая_Отечественная_война');
 })
-
-
                                 //Модальные окна в Main_content
 
 const modal = document.getElementById('modal');
@@ -46,8 +44,15 @@ galleryItems.forEach(item => { item.addEventListener('click', function(e) { e.pr
      }
   });
 
+
                            //TIPPY FOR PICTURES ON TO MODAL WINDOWS
 tippy('[data-tippy-content]', {
     theme: 'light',
     animation: 'scale',
 });
+
+                             //МОДАЛКА ДЛЯ ПОЧТОВЫХ РЕКВИЗИТОВ
+const modalPostAddress = document.getElementsByClassName('post_address')[0];
+modalPostAddress.addEventListener('click', function(event) {
+modal.style.display = 'flex';
+})
