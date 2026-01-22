@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>МАОУ Школа №79 Музей "Обелиск"</title>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
@@ -61,19 +62,90 @@
         <a href="#"><img src="Images/Main_content_technique.jpg" alt="Военная техника" data-tippy-content='Военная техника'></a>
     </div>
 </div>
-                                        <!--MODAL WINDOW FOR MAIN CONTENT-->
+                                        <!--INDIVIDUAL MODAL WINDOW FOR MAIN CONTENT-->
 
-<div id="modal" class="modal">
+<div id="modal-combat_operations" class="modal">
     <div class="modal-content">
         <span class="modal-close">&times;</span>
-        <div class="modal-info">
-            Заполнение модального окна
-        </div>
-        <div id="modal-caption"></div>
+        <h2>Боевые действия</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о боевых действиях</p>
     </div>
 </div>
 
-                                                 <!--FOTTER-->
+<div id="modal-nazi_atrocities" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Зверства нацистов</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о зверствах нацистов</p>
+    </div>
+</div>
+
+<div id="modal-people_in_war" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Люди на войне </h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о людях на войне</p>
+    </div>
+</div>
+
+<div id="modal-war_consequences" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Последствия войны</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о последствиях войны</p>
+    </div>
+</div>
+
+<div id="modal-country_in_war" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Работники тыла</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о работниках тыла</p>
+    </div>
+</div>
+
+<div id="modal-allies" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Союзники</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о союзниках</p>
+    </div>
+</div>
+
+<div id="modal-veterans" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Ветераны войны</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о ветеранах войны</p>
+    </div>
+</div>
+
+<div id="modal-victory_marshals" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Маршалы победы</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о маршалах победы</p>
+    </div>
+</div>
+
+<div id="modal-war_technique" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Техника Великой Отечественной войны</h2>
+        <img src="#" alt="TEXT">
+        <p>Текст о технике Великой Отечественной войны</p>
+    </div>
+</div>
+
+<!--FOTTER-->
 
 <div class ="footer">
     <div class="map">
@@ -108,10 +180,22 @@
     </div>
 </div>
 
+<!--Модалка для почтовых реквизитов-->
+<div id="modal-post-address" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Почтовые реквизиты</h2>
+        <p>
+            <span>МАОУ ШКОЛА №79
+                <br>
+             450065, Республика Башкортостан, г. Уфа, ул. Борисоглебская, д. 16</span>
+        </p>
+    </div>
+</div>
                                                  <!--SCRIPTS-->
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src = "app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

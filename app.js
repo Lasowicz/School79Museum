@@ -7,52 +7,67 @@ const collage = document.getElementById("collage");
 collage.addEventListener("click", function () {
     window.open('https://ru.ruwiki.ru/wiki/Великая_Отечественная_война');
 })
+
+
                                 //Модальные окна в Main_content
+const galleryItems = document.querySelectorAll('.gallery-item')
 
-const modal = document.getElementById('modal');
-const modalImg = document.getElementById('modal-img');
-const modalCaption = document.getElementById('modal-caption');
-const closeBtn = document.querySelector('.modal-close');
-
-                                // Все элементы галереи
-const galleryItems = document.querySelectorAll('.gallery-item');
-
-                                // Обработчик клика на изображение
-galleryItems.forEach(item => { item.addEventListener('click', function(e) { e.preventDefault(); // Отменяем переход по ссылке
-
-                                        // Показываем модальное окно
- modal.style.display = 'flex';
- });
- });
-
-                                // Закрытие по крестику
- closeBtn.addEventListener('click', function() {
- modal.style.display = 'none';
- });
-
-                                // Закрытие по клику на оверлей (вне контента)
- modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
- });
-
-                                // Закрытие по клавише Esc
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'flex') {
-        modal.style.display = 'none';
+galleryItems.forEach((item) => {
+    item.addEventListener('click', function (event) {
+     event.preventDefault();
+     const itemId = this.id;
+        const modal = document.getElementById(`modal-${itemId}`);
+     if (modal) {
+         modal.style.display = 'block';
      }
-  });
-
-
-                           //TIPPY FOR PICTURES ON TO MODAL WINDOWS
-tippy('[data-tippy-content]', {
-    theme: 'light',
-    animation: 'scale',
+    });
 });
 
-                             //МОДАЛКА ДЛЯ ПОЧТОВЫХ РЕКВИЗИТОВ
-const modalPostAddress = document.getElementsByClassName('post_address')[0];
-modalPostAddress.addEventListener('click', function(event) {
-modal.style.display = 'flex';
-})
+const closeButtons = document.querySelectorAll('.modal-close');
+closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener('click', function () {
+        const modal = this.closest('.modal');
+        modal.style.display = 'none';
+    });
+});
+
+window.addEventListener('click', function (event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+    }
+});
+
+
+                            //Модалка для почтовых реквизитов
+function openPostAddressModal() {
+    const modal = document.getElementById('modal-post-address');
+    if (modal) {
+      modal.style.display = 'block';
+   }
+}
+
+const postAddressImg = document.querySelector('.post_address .icon_wrapper img');
+  if (postAddressImg) {
+    postAddressImg.addEventListener('click', function(event) {
+      event.preventDefault();
+        openPostAddressModal(); // Вызываем новую функцию
+    });
+}
+// Обработчик на закрытие по клавише Escape, но он не рабоает, надо исправить!
+  postAddressImg.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+          event.preventDefault();
+          const modal = document.getElementById('modal-post-address');
+          if (modal) {
+              modal.style.display = 'none';
+          }
+      }
+  })
+
+
+//TIPPY FOR PICTURES ON TO MODAL WINDOWS
+tippy('[data-tippy-content]', {
+    theme: 'light',
+        animation: 'scale',
+});
+

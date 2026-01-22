@@ -36,29 +36,6 @@
     min-width: 200px;
 }
 
-/* Адаптивные правила для Logo and collage*/
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo, #collage {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #logo {
-        width: 343px;
-    }
-
-    #collage {
-        width: 1150px;
-    }
-}
-
 #logo:hover {
     transform: scale(101%);
     transition: 1s;
@@ -73,7 +50,8 @@
 .main-menu {
     margin-top: 5px;
     background-color: darkred;
-    height: 60px;
+    min-height: 60px;
+    height: auto;
     font-family: Nunito, Arial, sans-serif, serif;
     font-weight: bold;
     display: flex;
@@ -132,6 +110,7 @@
     transition: 1s;
 }
 
+
 /*MAIN CONTENT*/
 .main_content {
     margin-top: 10px;
@@ -141,17 +120,6 @@
     grid-gap: 10px;
     gap: 10px;
     background-color: rgba(0,0,0,5%);
-}
-@media (max-width: 768px) {
-    .main_content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .main_content {
-        grid-template-columns: 1fr;
-    }
 }
 
 .gallery-item {
@@ -174,6 +142,7 @@
 }
 
 /*Модальные окна для Main content*/
+/* Гарантируем видимость модальных окон */
 .modal {
     display: none;
     position: fixed;
@@ -183,47 +152,34 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
 }
 
-/* Содержимое модального окна */
 .modal-content {
     background-color: #fff;
+    margin: 5% auto;
     padding: 20px;
-    border-radius: 8px;
-    max-width: 800px;
-    max-height: 600px;
-    overflow: hidden;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
     position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Кнопка закрытия */
 .modal-close {
-    position: absolute;
-    right: 12px;
-    top: 16px;
+    color: #aaa;
+    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    color: #666;
 }
 
-/* Изображение в модалке */
-.modal-info {
-    width: 1024px;
-    height: 768px; /* Фиксированная высота для изображения */
-    object-fit: cover; /* Сохраняем пропорции, заполняем контейнер */
-    display: block;
+.modal-close:hover {
+    color: black;
+    text-decoration: none;
 }
 
-/* Подпись под изображением */
-#modal-caption {
-    text-align: center;
-    margin-top: 15px;
-    font-style: italic;
-    color: #555;
-}
 
 /*FOTTER*/
 
@@ -234,7 +190,8 @@
     font-size: 16px;
     font-weight: bold;
     background-color: darkred;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -270,3 +227,79 @@
     transition: 1s;
 }
 
+/*ЗАГОЛОВКИ H2*/
+
+h2{
+    text-align: center;
+}
+
+/*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
+.container, .main-menu, .main_content,  .footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        margin-top: 10px; /* было 5px — увеличим для читаемости */
+    }
+
+    .main_content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        padding: 15px 10px; /* уменьшим отступы */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-menu {
+        padding: 10px 0; /* уберём лишние отступы */
+    }
+
+    .footer {
+        padding: 10px 5px;
+    }
+}
+
+/* Адаптивные правила для Logo and collage*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo, #collage {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #logo {
+        width: 343px;
+    }
+
+    #collage {
+        width: 1150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .main_content {
+        grid-template-columns: 1fr;
+    }
+}
