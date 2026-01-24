@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2272d15-69c9-4bdc-b177-6e3ad632bb5a" name="Changes" comment="Добавил basement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="b2272d15-69c9-4bdc-b177-6e3ad632bb5a" name="Changes" comment="Добавил basement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +127,7 @@
       <workItem from="1768918071043" duration="652000" />
       <workItem from="1769001231993" duration="14000" />
       <workItem from="1769008513654" duration="399000" />
+      <workItem from="1769180164237" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="27.11.2025&#10;Создал заготовку для меню под сайт музея школы №79">
       <option name="closed" value="true" />
