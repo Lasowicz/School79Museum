@@ -137,9 +137,11 @@
     transition: transform 0.3s ease;
 }
 
+
 .gallery-item:hover img {
     transform: scale(1.05);
 }
+
 
 /*Модальные окна для Main content*/
 /* Гарантируем видимость модальных окон */
@@ -165,6 +167,19 @@
     position: relative;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content .modal-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.modal-text {
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .modal-close {
