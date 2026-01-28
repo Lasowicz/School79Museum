@@ -180,6 +180,9 @@
 .modal-text {
     padding: 0 20px;
     box-sizing: border-box;
+    text-align: justify;
+    color:black;
+    font-size: 18px;
 }
 
 .modal-close {
@@ -195,6 +198,10 @@
     text-decoration: none;
 }
 
+.modal-text img:hover {
+    transform: scale(103%);
+    transition: 1s;
+}
 
 /*FOTTER*/
 
@@ -242,9 +249,9 @@
     transition: 1s;
 }
 
-/*ЗАГОЛОВКИ H2*/
+/*ЗАГОЛОВКИ H2, H4*/
 
-h2{
+h2, h3{
     text-align: center;
 }
 
