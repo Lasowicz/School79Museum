@@ -268,60 +268,22 @@ h2, h3{
 
 @media (max-width: 768px) {
     .main-menu {
-        margin-top: 10px; /* было 5px — увеличим для читаемости */
+        margin-top: 10px;
     }
-
     .main_content {
         margin-top: 15px;
         margin-bottom: 15px;
+        grid-template-columns: repeat(2, 1fr);
     }
-
     .footer {
-        padding: 15px 10px; /* уменьшим отступы */
+        padding: 15px 10px;
     }
-}
-
-@media (max-width: 480px) {
-    .main-menu {
-        padding: 10px 0; /* уберём лишние отступы */
-    }
-
-    .footer {
-        padding: 10px 5px;
-    }
-}
-
-/* Адаптивные правила для Logo and collage*/
-@media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: flex-start;
     }
-
     #logo, #collage {
         width: 100%;
         margin-bottom: 11px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #logo {
-        width: 343px;
-    }
-
-    #collage {
-        width: 1150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .main_content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .main_content {
-        grid-template-columns: 1fr;
     }
 }
