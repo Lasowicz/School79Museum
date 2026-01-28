@@ -64,6 +64,23 @@ const postAddressImg = document.querySelector('.post_address .icon_wrapper img')
       }
   })
 
+      //Функция на проверку возраста в секцию картинок "Зверства нацистов"
+
+const atrocitiezImages = document.querySelectorAll('.modal_nazi_atrocities img');
+  const images = Array.from(atrocitiezImages);
+  images.forEach(image => {
+      image.style.filter = 'blur(5px)';
+      image.addEventListener('mouseenter', function(event) {
+           image.style.filter = 'blur(0px)';
+      })
+      image.addEventListener('mouseleave', function(event) {
+            image.style.filter = 'blur(5px)';
+      })
+})
+
+
+
+
 
 //TIPPY FOR PICTURES ON TO MODAL WINDOWS
 tippy('[data-tippy-content]', {
