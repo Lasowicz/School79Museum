@@ -4,7 +4,10 @@
     src: url(../Fonts/Nunito-Regular.woff2);
     font-weight: normal;
     font-style: normal;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 /* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
 .header-area{
@@ -16,7 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+    gap: 10px;
 }
 
 #logo {
@@ -33,7 +37,7 @@
     background-repeat: no-repeat;
     height: 61px;
     flex: 2 1 auto;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 #logo:hover {
@@ -173,7 +177,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 4px;
 }
 
@@ -202,7 +206,12 @@
     transform: scale(103%);
     transition: 1s;
 }
+.modal-text button {
 
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+}
 /*FOTTER*/
 
 .footer {
@@ -255,35 +264,94 @@ h2, h3{
     text-align: center;
 }
 
-/*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
-.container, .main-menu, .main_content,  .footer {
-    width: 100%;
-    box-sizing: border-box;
+/*Оформление контента на вкладке артефакты*/
+
+.artifacts {
+    display: grid;
+    flex-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
 }
 
-.gallery-item img {
+/*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
+/*.container, .main-menu, .main_content,  .footer {
+    width: 100%;
+    box-sizing: border-box;
+}*/
+
+img {
     max-width: 100%;
     height: auto;
 }
+.menu-toggle {
+    display: none; /* Скрыто на десктопах */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: darkred;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 100;
+}
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Показываем на мобильных */
+    }
+    .menu {
+        display: none; /* Изначально скрыто */
+        flex-direction: column;
+        width: 100%;
+        background-color: darkred;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu a {
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
     .main-menu {
         margin-top: 10px;
     }
     .main_content {
         margin-top: 15px;
         margin-bottom: 15px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+    .gallery-item {
+        margin: 5px 0;
     }
     .footer {
-        padding: 15px 10px;
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
     .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
-    #logo, #collage {
-        width: 100%;
-        margin-bottom: 11px;
+    #logo {
+        height: 61px;
+        min-width: 100px;
+    }
+    #collage {
+        height: 61px;
+        min-width: 200px;
     }
 }

@@ -71,15 +71,19 @@ const atrocitiezImages = document.querySelectorAll('.modal_nazi_atrocities img')
   images.forEach(image => {
       image.style.filter = 'blur(5px)';
       image.addEventListener('mouseenter', function(event) {
-           image.style.filter = 'blur(0px)';
-      })
+          image.style.filter = 'blur(0px)';
+      });
       image.addEventListener('mouseleave', function(event) {
             image.style.filter = 'blur(5px)';
-      })
+      });
 })
 
 
+// Для переключения меню на мобильных устройствах
 
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+   document.querySelector('.menu').style.display = 'flex';
+});
 
 
 //TIPPY FOR PICTURES ON TO MODAL WINDOWS
