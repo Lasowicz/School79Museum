@@ -23,16 +23,14 @@ html {
     gap: 10px;
 }
 
-#logo {
-    background-image: url(../Images/schoolLogo.png);
+#logo img{
     background-size: contain;
     background-repeat: no-repeat;
     height: 61px;
     min-width: 100px;
     flex: 1 1 auto;
 }
-#collage {
-    background-image: url(../Images/header_collage.png);
+#collage img{
     background-size: cover;
     background-repeat: no-repeat;
     height: 61px;
