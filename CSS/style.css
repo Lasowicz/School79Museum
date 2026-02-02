@@ -145,7 +145,6 @@ html {
 
 
 /*Модальные окна для Main content*/
-/* Гарантируем видимость модальных окон */
 .modal {
     display: none;
     position: fixed;
