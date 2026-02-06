@@ -1,4 +1,4 @@
-/* ШРИФТЫ ДЛЯ СТРАНИЦЫ*/
+                                                        /* ШРИФТЫ ДЛЯ СТРАНИЦЫ*/
 @font-face {
     font-family: Nunito, Arial, sans-serif, serif;
     src: url(../Fonts/Nunito-Regular.woff2);
@@ -9,7 +9,8 @@
 html {
     scroll-behavior: smooth;
 }
-/* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
+
+                                                  /* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
 .header-area{
     width: 100%;
     box-sizing: border-box;
@@ -112,7 +113,7 @@ html {
 }
 
 
-/*MAIN CONTENT*/
+                                                             /*ОСНОВНОЙ КОНТЕНТ 9 ИЗОБРАЗИТЕЛЬНЫХ ПАНЕЛЕЙ*/
 .main_content {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -144,7 +145,7 @@ html {
 }
 
 
-/*Модальные окна для Main content*/
+                                                          /*МОДАЛЬНЫЕ ОКНА ДЛЯ Main content*/
 .modal {
     display: none;
     position: fixed;
@@ -208,7 +209,11 @@ html {
     text-transform: uppercase;
     text-align: center;
 }
-/*FOTTER*/
+h2, h3{
+     text-align: center;
+}
+
+                                                                    /*FOTTER*/
 
 .footer {
     font-family: "Nunito", Arial, sans-serif, serif;
@@ -254,20 +259,19 @@ html {
     transition: 1s;
 }
 
-/*ЗАГОЛОВКИ H2, H4*/
 
-h2, h3{
-    text-align: center;
-}
-
-/*Оформление контента на вкладке артефакты*/
+                                               /*ОФОРМЛЕНИЕ АРТЕФАКТОВ ВО ВКЛАДЕ АРТЕФАКТЫ*/
 
 .artifacts {
     display: grid;
     flex-flow: column;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
     gap: 10px;
+}
+.artifacts img:hover {
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 /*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
