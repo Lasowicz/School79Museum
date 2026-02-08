@@ -1,14 +1,11 @@
                                                         /* ШРИФТЫ ДЛЯ СТРАНИЦЫ*/
 @font-face {
-    font-family: Nunito, Arial, sans-serif, serif;
+    font-family: Nunito sans-serif serif;
     src: url(../Fonts/Nunito-Regular.woff2);
     font-weight: normal;
     font-style: normal;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
                                                   /* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
 .header-area{
@@ -122,6 +119,7 @@ html {
     grid-gap: 10px;
     gap: 10px;
     background-color: rgba(0,0,0,5%);
+
 }
 
 .gallery-item {
@@ -147,6 +145,7 @@ html {
 
                                                           /*МОДАЛЬНЫЕ ОКНА ДЛЯ Main content*/
 .modal {
+    font-family: Nunito, Arial, sans-serif, serif;
     display: none;
     position: fixed;
     z-index: 1000;
@@ -156,34 +155,34 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: auto;
+    text-indent: 20px;
+    scroll-behavior: smooth;
+    transition: 0.1s;
 }
 
 .modal-content {
     background-color: #fff;
     margin: 5% auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
     position: relative;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.modal-content .modal-text img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 4px;
-}
-
-.modal-text {
     padding: 0 20px;
     box-sizing: border-box;
     text-align: justify;
     color:black;
     font-size: 18px;
+    
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
 }
 
 .modal-close {
@@ -199,20 +198,25 @@ html {
     text-decoration: none;
 }
 
-.modal-text img:hover {
+.modal img:hover {
     transform: scale(103%);
     transition: 1s;
 }
-.modal-text button {
 
-    border: none;
-    text-transform: uppercase;
-    text-align: center;
-}
 h2, h3{
      text-align: center;
 }
 
+.manage-button {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.manage-button button {
+    height: auto;
+    width: 70%;
+}
                                                          /*FOTTER*/
 
 .footer {
@@ -274,18 +278,14 @@ h2, h3{
     transition: 1s;
 }
 
-/*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
-/*.container, .main-menu, .main_content,  .footer {
-    width: 100%;
-    box-sizing: border-box;
-}*/
+                                        /*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
 
-img {
+.main-menu img {
     max-width: 100%;
     height: auto;
 }
 .menu-toggle {
-    display: none; /* Скрыто на десктопах */
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -300,18 +300,30 @@ img {
 
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Показываем на мобильных */
+        display: block;
     }
     .menu {
-        display: none; /* Изначально скрыто */
+        display: none;
+    }
+    .main-menu {
+        display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: darkred;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 10px 0;
+        margin-top: 10px;
     }
+    .main-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
     .menu ul {
         flex-direction: column;
         align-items: center;
@@ -350,8 +362,8 @@ img {
         height: 61px;
         min-width: 100px;
     }
-    #collage {
-        height: 61px;
-        min-width: 200px;
+    #collage img {
+        max-width: 100%;
+        height: auto;
     }
 }

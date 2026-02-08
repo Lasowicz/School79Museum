@@ -70,16 +70,39 @@
 <div id="modal-combat_operations" class="modal">
     <div class="modal-content">
         <span class="modal-close">&times;</span>
-            <h2>Основные сражения и операции Великой Отечественной войны</h2>
+            <h2 id="main_battles">Основные сражения и операции Великой Отечественной войны</h2>
+        <ul>
+            <li>
+                <a href="#moscow-battle-content">
+                Битва за Москву</a>
+            </li>
+            <li> <a href="#stalingrad-content">
+                Сталинградская битва</a>
+            </li>
+            <li><a href="#kursk-content">
+                Курская дуга</a>
+            </li>
+            <li><a href="#bagration-content">
+                Операция Багратион</a>
+            </li>
+            <li><a href="#visla-oder-content">
+                Висло-Одерская операция</a>
+            </li>
+            <li><a href="#berlin-battle-content">
+                Штурм Берлина</a>
+            </li>
+        </ul>
+        <hr>
         <div  id="moscow-battle-content"
               class="dynamic-content"
               data-src="modal_content_texts/main_battles/1.Moscow_battle.html">
         </div>
+
          <div  id="stalingrad-content"
           class="dynamic-content"
           data-src="modal_content_texts/main_battles/2.Stalingrad.html">
          </div>
-        <div  id="moscow-content"
+        <div  id="kursk-content"
               class="dynamic-content"
               data-src="modal_content_texts/main_battles/3.Kursk_battle.html">
         </div>
@@ -95,6 +118,9 @@
               class="dynamic-content"
               data-src="modal_content_texts/main_battles/6.Berlin_Operation.html">
         </div>
+        <div class = "manage-button">
+            <a href="#main_battles"><button>Наверх</button></a>
+        </div>
     </div>
 </div>
 
@@ -102,55 +128,78 @@
 <div id="modal-nazi_atrocities" class="modal">
     <div class="modal-content">
         <span class="modal-close">&times;</span>
-        <div class="modal-text">
-            <section class = "modal_nazi_atrocities">
-                <h2>Зверства нацистов во время Великой Отечественной войны</h2>
-                <img src="Images/atrocities1.png" alt="TEXT">
-                <img src="Images/atrocities2.png" alt="TEXT">
-                <p> Нацисты совершали массовые убийства, пытки, изнасилования и другие зверства против мирного населения и военнопленных на оккупированных территориях СССР во время Великой Отечественной войны. Среди преступлений:</p>
-                <ul>
-                    <li>
-                        Массовые расстрелы. Людей сгоняли в группы, раздевали и расстреливали в рвах, ямах, канавах. Например, в деревне Ксты (Тверская область) в январе 1942 года было убито 50 мирных жителей (старики, женщины, дети).
-                    </li>
-                    <li>
-                        Пытки и мучения. Жертв избивали, отрезали уши, носы, конечности, подвергали изнасилованиям. В Духовщинском и Пречистенском районах женщин и девушек после изнасилований давили танками и сжигали живьём.
-                    </li>
-                    <li>
-                        Использование «душегубок». Специальные автомобили (газвагены), в которые подавались выхлопные газы, использовались для массового убийства.
-                    </li>
-                    <li>
-                        Создание концлагерей и лагерей для военнопленных с бесчеловечными условиями. Пленных почти не кормили, подвергали болезням, массово отравляли (например, в психоколонии в Бурашево Калининской области умерщвлено 737 человек путём впрыскивания инсулина, веронала, люминала).
-                    </li>
-                    <li>
-                        Угон населения в рабство. Сотни тысяч людей, включая детей, насильно отправляли в Германию.
-                    </li>
-                    <li>
-                        Уничтожение детей. В Преславском детском доме были расстреляны 66 детей, спастись удалось лишь 14.
-                    </li>
-                </ul>
-                <p>Нацисты не делали различий между мирными жителями и военнопленными, считая всех на захваченной территории врагами. </p>
-            </section>
+                <h2 id="nazi_atrocities_btn">Зверства нацистов во время Великой Отечественной войны</h2>
+        <ul>
+            <li>
+                <a href="#punitive_operations_content">
+                    Карательные операции и политика «выжженной земли»</a>
+            </li>
+            <li> <a href="#mass-executuions-content">
+                Массовые казни в городах</a>
+            </li>
+            <li><a href="#genocide-content">
+                Геноцид мирного населения</a>
+            </li>
+        </ul>
+        <hr>
+        <div  id="punitive_operations_content"
+              class="dynamic-content"
+              data-src="modal_content_texts/nazi_atrocities/1.Punitive_operations.html">
+        </div>
+        <div  id="mass-executuions-content"
+              class="dynamic-content"
+              data-src="modal_content_texts/nazi_atrocities/2.Mass_executions.html">
+        </div>
+        <div  id="genocide-content"
+              class="dynamic-content"
+              data-src="modal_content_texts/nazi_atrocities/3.Genocide_against_civilians.html">
+        </div>
+        <div class = "manage-button">
+            <a href="#nazi_atrocities_btn"><button>Наверх</button></a>
+        </div>
     </div>
-    </div>
-</div>
+ </div>
+
 
 <div id="modal-people_in_war" class="modal">
     <div class="modal-content">
         <span class="modal-close">&times;</span>
-        <div class="modal-text">
-            <section class = "modal_artists">
-                <h2>Советские актеры на войне </h2>
-                <img src="Images/artists/nikulin.webp" alt="Никулин">
-                <p>Юрий Никулин прошел две войны, прослужив в армии почти 7 лет (1939–1946). Участвовал в советско-финляндской войне, а затем в Великой Отечественной войне, защищая Ленинград в зенитных частях. Пережил блокаду, был контужен, награжден медалями «За отвагу», «За оборону Ленинграда» и «За победу над Германией», встретив Победу старшим сержантом. </p>
-                <img src="Images/artists/smirnov.webp" alt="Смирнов">
-                <p>Алексей Макарович Смирнов (знаменитый актер) прошел Великую Отечественную войну с 1941 года, став кавалером орденов Славы II и III степеней, ордена Красной Звезды и медали «За боевые заслуги». Будучи старшим сержантом/старшиной и командиром минометного взвода, он лично участвовал в рукопашных боях, уничтожал вражескую технику и пехоту, проявив мужество. Смирнов был героем войны, чей реальный подвиг часто скрывался за комическими образами в кино. </p>
-                <img src="Images/artists/basov.webp" alt="Басов">
-                <p>Владимир Басов прошел Великую Отечественную войну с 1941 по 1945 год, будучи офицером-артиллеристом. Добровольно ушел на фронт, командовал минометной батареей, закончил войну капитаном. Был награжден орденом Красной Звезды и медалью «За боевые заслуги» за проявленное мужество при штурме укреплений противника. </p>
-                <img src="Images/artists/etush.webp" alt="Этуш">
-                <p>Владимир Этуш — советский актёр, ветеран Великой Отечественной войны. В октябре 1941 года добровольцем ушел на фронт, отказавшись от брони. Служил военным переводчиком, затем — помощником начальника штаба стрелкового полка. Участвовал в боях на Кавказе и под Ростовом, был награжден орденом Красной Звезды. В сентябре 1943 года под Токмаком Запорожской области получил тяжелое ранение. После долгого лечения в госпитале в 1944 году был комиссован со второй группой инвалидности. </p>
-            <p>Больше можно прочитать <a href = "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D1%85_%D0%B0%D0%BA%D1%82%D1%91%D1%80%D0%BE%D0%B2-%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2" target="_blank">тут</a></p>
-            </section>
-            </div>
+                <h2 id = "soviet_people">Известные советские люди на войне </h2>
+        <ul>
+            <li>
+                <a href="#Nikulin">
+                    Юрий Никулин</a>
+            </li>
+            <li> <a href="#Smirnov">
+                Алексей Смирнов</a>
+            </li>
+            <li><a href="#Basov">
+                Владимир Басов</a>
+            </li>
+            <li><a href="#Etush">
+                Владимир Этуш</a>
+            </li>
+        </ul>
+        <hr>
+        <div  id="Nikulin"
+              class="dynamic-content"
+              data-src="modal_content_texts/soviet_actors/1.Nikulin.html">
+        </div>
+        <div  id="Smirnov"
+              class="dynamic-content"
+              data-src="modal_content_texts/soviet_actors/2.Smirnov.html">
+        </div>
+        <div  id="Basov"
+              class="dynamic-content"
+              data-src="modal_content_texts/soviet_actors/3.Basov.html">
+        </div>
+        <div  id="Etush"
+              class="dynamic-content"
+              data-src="modal_content_texts/soviet_actors/4.Etush.html">
+        </div>
+        <div class = "manage-button">
+            <a href="#soviet_people"><button>Наверх</button></a>
+        </div>
     </div>
 </div>
 
