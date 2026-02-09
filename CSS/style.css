@@ -278,6 +278,14 @@ h2, h3{
     transition: 1s;
 }
 
+.brief_information {
+    display: flex;
+    flex-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+}
+
                                         /*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
 
 .main-menu img {
