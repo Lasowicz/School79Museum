@@ -116,13 +116,6 @@ const atrocitiezImages = document.querySelectorAll('.modal_nazi_atrocities img')
      });
  });
 
-// Для переключения меню на мобильных устройствах
-
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-   document.querySelector('.menu').style.display = 'flex';
-});
-
-
 //TIPPY FOR PICTURES ON TO MODAL WINDOWS
 tippy('[data-tippy-content]', {
     theme: 'light',
