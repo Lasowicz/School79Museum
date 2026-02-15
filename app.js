@@ -116,6 +116,38 @@ const atrocitiezImages = document.querySelectorAll('.modal_nazi_atrocities img')
      });
  });
 
+                                  //Взаимодействие с WELCOME-Модалкой
+document.addEventListener('DOMContentLoaded', () => {
+    const welcomeModal = document.querySelector('.welcome-modal');
+    const closeWelcomeModal = document.querySelector('.enter-button');
+    const closeButton = document.querySelector('.exit-button');
+
+    if (!welcomeModal || !closeButton || !closeWelcomeModal) {
+        console.warn('Один из элементов модального окна не найден в DOM');
+        return;
+    }
+
+    const isModalSeen = sessionStorage.getItem('welcomeModalSeen');
+
+    if (!isModalSeen) {
+        welcomeModal.style.display = 'flex';
+    }
+
+
+    closeWelcomeModal.addEventListener('click', (event) => {
+        event.preventDefault();
+        welcomeModal.style.display = 'none';
+        sessionStorage.setItem('welcomeModalSeen', 'true');
+    });
+
+    closeButton.addEventListener('click', (event) => {
+        window.close();
+    });
+});
+
+                                //ПОКАЗ МОДАЛКИ В РАМКАХ ТЕКУЩЕЙ СЕССИИ
+
+
 //TIPPY FOR PICTURES ON TO MODAL WINDOWS
 tippy('[data-tippy-content]', {
     theme: 'light',
