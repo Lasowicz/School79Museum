@@ -5,7 +5,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
                                                         /*МОДАЛКА НА ПРИВЕТСТВИЕ*/
 .welcome-modal {
     font-family: Nunito sans-serif serif;
@@ -47,7 +46,6 @@
     transform: scale(105%);
     transition: 1s;
 }
-
                                                   /* ОФОРМЛЕНИЕ ЛОГОТИПА И КОЛЛАЖА*/
 .header-area{
     width: 100%;
