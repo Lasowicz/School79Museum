@@ -127,21 +127,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const isModalSeen = sessionStorage.getItem('welcomeModalSeen');
+    const isModalSeen = localStorage.getItem('welcomeModalSeen');
 
     if (!isModalSeen) {
-        welcomeModal.style.display = 'flex';
+        welcomeModal.classList.add('modal-visible');
     }
-
 
     closeWelcomeModal.addEventListener('click', (event) => {
         event.preventDefault();
-        welcomeModal.style.display = 'none';
-        sessionStorage.setItem('welcomeModalSeen', 'true');
+        welcomeModal.classList.remove('modal-visible');
+        localStorage.setItem('welcomeModalSeen', 'true');
     });
 
     closeButton.addEventListener('click', (event) => {
-        window.close();
+        welcomeModal.classList.remove('modal-visible');
     });
 });
 

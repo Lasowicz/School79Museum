@@ -15,12 +15,15 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
-
+.welcome-modal.modal-visible {
+    display: flex; /* Показывается при наличии класса */
+                                                            /* дополнительные стили для видимого состояния */
+}
 .welcome-content {
     background-color: #fff;
     padding: 32px;
@@ -66,25 +69,22 @@
     background-repeat: no-repeat;
     height: auto;
     min-width: auto;
-    flex: 1 1 auto;
+
 }
 #collage img{
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
     width: auto;
-    flex: 2 1 auto;
-    min-width: 300px;
 }
 
 #logo:hover {
-    transform: scale(101%);
+    transform: translateX(10px);
     transition: 1s;
 }
 #collage:hover {
     transform: translateX(-10px);
     transition: 1s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 100%);
 }
 
 /*ГЛАВНОЕ МЕНЮ - ЭКСПОЗИЦИЯ - АРТЕФАКТЫ - БЕССМЕРТНЫЙ ПОЛК - КРАТКАЯ СПРАВКА - МУЗЕЙ В ЛИЦАХ*/
@@ -259,6 +259,20 @@ h2, h3{
     height: auto;
     width: 70%;
 }
+
+.modal-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.modal-content li a:visited {
+    text-decoration: none;
+}
+
+.modal-content li a:hover {
+    background-color: gray;
+    transition: 1s;
+}
                                                          /*FOTTER*/
 
 .footer {
@@ -299,7 +313,9 @@ h2, h3{
     text-decoration: none;
     color: white;
 }
-
+.post_address p{
+    justify-content: center;
+}
 .e-mail:hover, .vk:hover, .map:hover, .post_address:hover {
     transform: scale(1.05);
     transition: 1s;
@@ -398,10 +414,20 @@ h2, h3{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap:15px;
+        padding: 0 10px;
     }
     #logo {
-        height: 61px;
-        min-width: 100px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    #logo img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 100%;
     }
     #collage img {
         max-width: 100%;
