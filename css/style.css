@@ -321,37 +321,6 @@ h2, h3{
     transition: 1s;
 }
 
-
-                                               /*ОФОРМЛЕНИЕ АРТЕФАКТОВ ВО ВКЛАДЕ АРТЕФАКТЫ*/
-
-.artifacts {
-    display: grid;
-    flex-flow: column;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    gap: 10px;
-}
-.artifacts img:hover {
-    transform: scale(1.05);
-    transition: 1s;
-}
-
-                                                        /*ОФОРМЛЕНИЕ КРАТКОЙ СПРАВКИ*/
-
-.brief_information {
-  background-color: white;
-    width: 300px;
-    height: 300px;
-}
-
-.brief-img {
-    display: grid;
-    flex-flow: column;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    gap: 10px;
-
-}
                                         /*МЕДИА ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ*/
 
 .main-menu img {

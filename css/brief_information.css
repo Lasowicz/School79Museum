@@ -1,0 +1,33 @@
+
+/*ОФОРМЛЕНИЕ КРАТКОЙ СПРАВКИ*/
+.brief-information {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.small_brief_containers {
+    height: 700px;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    overflow: auto;
+
+}
+.small_brief_containers img {
+    max-width: 600px;
+    max-height: 800px;
+}
+
+.small_brief_containers:hover {
+    transform: scale(101%);
+    transition: 1s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}

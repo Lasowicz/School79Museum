@@ -1,0 +1,14 @@
+
+/*ОФОРМЛЕНИЕ АРТЕФАКТОВ ВО ВКЛАДЕ АРТЕФАКТЫ*/
+
+.artifacts {
+    display: grid;
+    flex-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+}
+.artifacts img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
