@@ -1,10 +1,11 @@
 
 /*ОФОРМЛЕНИЕ КРАТКОЙ СПРАВКИ*/
-.brief-information {
+.brief_information {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
+    justify-items: center;
 }
 .small_brief_containers {
     height: 950px;
@@ -19,7 +20,6 @@
     position: relative;
     display: inline-block;
     overflow: auto;
-
 }
 .small_brief_containers img {
     max-width: 500px;
@@ -31,10 +31,28 @@
     font-size: 20px;
     width: 500px;
     text-align: justify;
+
 }
 
 .small_brief_containers:hover {
     transform: scale(101%);
     transition: 1s;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .brief_information {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .text-container {
+        font-family: Nunito, Tahoma, sans-serif;
+        font-size: 14px;
+        width: auto;
+    }
+    .small_brief_containers {
+        height: auto;
+    }
 }
