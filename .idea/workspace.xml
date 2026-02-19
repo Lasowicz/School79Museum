@@ -7,14 +7,7 @@
     <list default="true" id="60e0a011-20ac-4197-880d-dbb1e32fc6dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artifacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brief_information.html" beforeDir="false" afterPath="$PROJECT_DIR$/brief_information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exposition.html" beforeDir="false" afterPath="$PROJECT_DIR$/exposition.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brief_information/school.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/exposition/exposition1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/exposition/exposition1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/exposition/exposition2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/exposition/exposition3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/artifacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/artifacts.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +95,8 @@
       <workItem from="1771133485585" duration="7305000" />
       <workItem from="1771316067033" duration="6133000" />
       <workItem from="1771333246774" duration="1189000" />
+      <workItem from="1771424592648" duration="34000" />
+      <workItem from="1771477300163" duration="2836000" />
     </task>
     <servers />
   </component>

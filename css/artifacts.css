@@ -3,11 +3,32 @@
 
 .artifacts {
     display: grid;
-    flex-flow: column;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     grid-gap: 10px;
     gap: 10px;
 }
+
+.small_container_artifacts {
+    height: 400px;
+    background: white;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    overflow: auto;
+}
+
+.artifacts_image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
 .artifacts img:hover {
     transform: scale(1.05);
     transition: 1s;
