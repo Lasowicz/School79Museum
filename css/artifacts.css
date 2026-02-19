@@ -28,6 +28,11 @@
     max-height: 300px;
 }
 
+.text-container {
+    font-family: "Nunito", Arial, sans-serif, serif;
+    font-size: 12px;
+    text-align: justify;
+}
 
 .artifacts img:hover {
     transform: scale(1.05);
