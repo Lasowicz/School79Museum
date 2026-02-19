@@ -87,6 +87,29 @@
     transition: 1s;
 }
 
+/*БЕГУЩАЯ СТРОКА НАД МОДАЛКАМИ ГЛАВНОГО МЕНЮ*/
+
+.runnigRow {
+    font-family: Nunito sans-serif serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.runnigRow span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: runnigRow 20s linear infinite;
+}
+
+@keyframes runnigRow {
+     0% { transform: translate(0, 0); }
+     100% { transform: translate(-100%, 0); }
+}
 /*ГЛАВНОЕ МЕНЮ - ЭКСПОЗИЦИЯ - АРТЕФАКТЫ - БЕССМЕРТНЫЙ ПОЛК - КРАТКАЯ СПРАВКА - МУЗЕЙ В ЛИЦАХ*/
 .main-menu {
     margin-top: 5px;
