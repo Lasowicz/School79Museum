@@ -409,6 +409,10 @@ h2, h3{
         gap:15px;
         padding: 0 10px;
     }
+    .contacts {
+        text-align: center;
+        margin-right: 50px;
+    }
     #logo {
         width: auto;
         max-width: 100%;

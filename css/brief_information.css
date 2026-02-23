@@ -52,6 +52,11 @@
         font-size: 14px;
         width: auto;
     }
+    .small_brief_containers img {
+        max-width: 300px;
+        max-height: 400px;
+    }
+
     .small_brief_containers {
         height: auto;
     }

@@ -7,7 +7,7 @@
 
 .small_container_exposition {
     flex: 1 1 calc(25% - 10px);
-    background: whitesmoke;
+    background: white;
     border-radius: 10px;
     padding: 0;
     text-align: center;
@@ -20,6 +20,14 @@
 .small_container_exposition img {
     max-width: 400px;
     max-height: 600px;
+}
+
+.text-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Nunito", Arial, sans-serif, serif;
+    font-size: 14px;
+    text-align: justify;
 }
 
 .hidden-text {
@@ -38,3 +46,23 @@
     transition: opacity 1s ease;
     pointer-events: none;
 }
+ @media (max-width: 768px){
+     .container_exposition {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         gap: 10px;
+         padding: 10px;
+     }
+     .text-container {
+         font-family: Nunito, Tahoma, sans-serif;
+         font-size: 14px;
+         width: auto;
+     }
+     .small_container_exposition img {
+         max-width: 200px;
+         max-height: 400px;
+     }
+     .small_container_exposition {
+         height: auto;
+     }
+ }
