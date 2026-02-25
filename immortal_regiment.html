@@ -2,9 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>МАОУ Школа №79 Музей "Обелиск"</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="/School79Museum/css/style.css">
+    <link rel="stylesheet" href="/School79Museum/css/brief_information.css">
 </head>
+
 <body>
 
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+        <source src="images/fog.mp4" type="video/mp4">
+    </video>
+</div>
+
+<header class="header-area">
+    <div class="container">
+        <div id="logo">
+            <a href="">
+                <img src="images/schoolLogo.png" alt="E-mail">
+            </a>
+        </div>
+        <div id="collage">
+            <img src="images/header_collage.png" alt="Collage">
+        </div>
+    </div>
+</header>
+<div class="main-menu">
+    <div class="menu">
+        <ul>
+            <li><a href="/School79Museum/index.html">Главная</a></li>
+            <li><a href="/School79Museum/exposition.html">Экспозиция</a></li>
+            <li><a href="/School79Museum/artifacts.html">Артефакты</a></li>
+            <li><a href="/School79Museum/immortal regiment.html">Бессмертный полк</a></li>
+            <li><a href="/School79Museum/museum_in_faces.html">Музей в лицах</a></li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <a href="tel:+7(347)263-51-06">Приемная</a>
+    </div>
+</div>
+
+<div class="veterans_container"></div>
+
+<div class ="footer">
+    <div class="map">
+        <a id='map_link' href="https://yandex.ru/maps/-/CLgKEAIW&" target="_blank">
+            <div class="icon_wrapper">
+                <img src="images/map-icon.png" alt="карта">
+            </div>
+            Как проехать?
+        </a>
+    </div>
+    <div class ="post_address">
+        <div class="icon_wrapper">
+            <img src="images/post_address.png" alt="E-mail">
+        </div>
+        Почтовые реквизиты
+    </div>
+    <div class="e-mail">
+        <a href="mailto:sch79-ufa@yandex.ru" target="_blank">
+            <div class="icon_wrapper">
+                <img src="images/mail-icon.png" alt="E-mail">
+            </div>
+            Напишите нам!
+        </a>
+    </div>
+    <div class="vk">
+        <a href="https://vk.com/school_79_ufa" target="_blank">
+            <div class="icon_wrapper">
+                <img src="images/vk_logo.png" alt="E-mail">
+            </div>
+            Мы в ВК!
+        </a>
+    </div>
+</div>
+
+<!--Модальное окно для почтовых реквизитов-->
+<div id="modal-post-address" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Почтовые реквизиты</h2>
+        <p>
+            <span>МАОУ ШКОЛА №79
+                <br>
+             450065, Республика Башкортостан, г. Уфа, ул. Борисоглебская, д. 16</span>
+        </p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="app.js"></script>
+<script src="veteransImage.js"></script>
 </body>
 </html>
