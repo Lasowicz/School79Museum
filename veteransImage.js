@@ -1,24 +1,39 @@
-const veteransData = [
-    { img: './images/veterans/veteran1.png', alt: 'Ветеран 1'},
-    { img: './images/veterans/veteran2.png', alt: 'Ветеран 2'},
-    { img: './images/veterans/veteran3.png', alt: 'Ветеран 3'},
-    { img: './images/veterans/veteran4.png', alt: 'Ветеран 4'},
-    { img: './images/veterans/veteran5.png', alt: 'Ветеран 5'},
-    { img: './images/veterans/veteran6.png', alt: 'Ветеран 6'},
-    { img: './images/veterans/veteran7.png', alt: 'Ветеран 7'},
-    { img: './images/veterans/veteran8.png', alt: 'Ветеран 8'},
-]
+const container = document.getElementById('veterans_container');
+const newDiv = document.createElement('div');
 
-const veteranContainer = document.querySelector('.veterans_container');
+newDiv.style.display = 'grid';
+newDiv.style.gridTemplateColumns = 'repeat(4, 1fr)';
+newDiv.style.padding = '10px';
+newDiv.style.gap = '10px';
+newDiv.style.justifyItems = 'center'; // центрируем содержимое ячеек по горизонтали
+newDiv.style.alignItems = 'start';
 
-veteransData.forEach(item => {
-    const html = `
-    <div class="veterans_container">
-      <a href="images/artifacts_images/${item.img}" target="_blank">
-        <img src="images/artifacts_images/${item.img}" alt="${item.alt}" class="artifacts_image">
-      </a>
-      <div class="text-container">${item.text}</div>
-    </div>
-  `;
-    container.insertAdjacentHTML('beforeend', html);
+const veteransData = ['images/veterans/veterans1.png',
+    'images/veterans/veterans2.png',
+    'images/veterans/veterans3.png',
+    'images/veterans/veterans4.png',
+    'images/veterans/veterans5.png',
+    'images/veterans/veterans6.png',
+    'images/veterans/veterans7.png',
+    'images/veterans/veterans8.png'
+];
+
+veteransData.forEach(url => {
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = 'Бессмертный полк';
+    img.style.width = '100%';
+    img.style.maxWidth = '100%';
+    img.style.height = 'auto';
+    img.style.transition = 'transform 0.3s ease';
+
+    img.onmouseover = function() {
+        this.style.transform = 'scale(1.1)';
+    };
+    img.onmouseout = function() {
+        this.style.transform = 'scale(1)';
+    };
+    newDiv.appendChild(img);
 });
+container.appendChild(newDiv);
+
