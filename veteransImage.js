@@ -28,10 +28,10 @@ veteransData.forEach(url => {
     img.style.transition = 'transform 0.3s ease';
 
     img.onmouseover = function() {
-        this.style.transform = 'scale(1.1)';
+        this.style.transform = 'scale(101%)';
     };
     img.onmouseout = function() {
-        this.style.transform = 'scale(1)';
+        this.style.transform = 'scale(100%)';
     };
     newDiv.appendChild(img);
 });
