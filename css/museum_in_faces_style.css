@@ -1,0 +1,41 @@
+.museum_in_faces_main_container {
+    align-items: start;
+    display: grid;
+    grid-template-rows: auto minmax(450px, 1fr) minmax(450px, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.museum_in_faces_main_content {
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Гарантируем вертикальное расположение */
+    padding: 10px 0 0 0;
+    background-color: white;
+    justify-content: flex-start;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+.museum_in_faces_main_content img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 400px;
+    width: 700px;
+}
+
+.museum_in_faces_main_content:hover {
+    transform: scale(101%);
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    align-items: start;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
