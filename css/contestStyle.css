@@ -1,0 +1,111 @@
+.ozarichi_title {
+    font-family: Nunito, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em darkred;
+}
+
+.preview_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.img_preview {
+    margin: 0;
+    display: block;
+    height: auto;
+}
+
+.img_preview:first-child {
+    width: calc(100%*1920/3840);
+}
+.img_preview:nth-child(2) {
+    width: calc(100%*960/3840);
+}
+
+.ozarichi_preview_text {
+    margin-top: 0;
+    font-family: Nunito, sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*ОФОРМЛЕНИЕ ДЛЯ КОНКУРСА*/
+
+.artifacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 10px;
+    gap: 10px;
+}
+
+.small_container_artifacts {
+    height: 450px;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    overflow: auto;
+}
+
+.artifacts_image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.text-container {
+    font-family: "Nunito", Arial, sans-serif, serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.artifacts img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+
+@media (max-width: 768px) {
+    .artifacts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .text-container {
+        font-family: Nunito, Tahoma, sans-serif;
+        font-size: 14px;
+        width: auto;
+    }
+    .small_container_artifacts {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1376px) {
+    .artifacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .text-container {
+        font-family: Nunito, Tahoma, sans-serif;
+        font-size: 14px;
+        width: auto;
+    }
+    .small_container_artifacts {
+        height: auto;
+    }
+}
