@@ -6,6 +6,20 @@
     text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em darkred;
 }
 
+@media (max-width: 768px) {
+    .ozarichi_title {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 1px black, 0 0 0.5em red, 0 0 0.1em darkred;
+    }
+}
+
+@media (max-width: 480px) {
+    .ozarichi_title {
+        font-size: 1.2rem;
+        text-shadow: none;
+    }
+}
+
 .preview_content {
     display: flex;
     flex-direction: row;
@@ -13,6 +27,14 @@
     justify-content: flex-start;
     gap: 10px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .preview_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .img_preview {
@@ -28,6 +50,14 @@
     width: calc(100%*960/3840);
 }
 
+@media (max-width: 768px) {
+    .img_preview:first-child,
+    .img_preview:nth-child(2) {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
 .ozarichi_preview_text {
     margin-top: 0;
     font-family: Nunito, sans-serif;
@@ -36,11 +66,26 @@
     font-size: 18px;
 }
 
+
+@media (max-width: 768px) {
+    .ozarichi_preview_text {
+        text-align: justify;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ozarichi_preview_text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
 /*ОФОРМЛЕНИЕ ДЛЯ КОНКУРСА*/
 
 .artifacts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     grid-gap: 10px;
     gap: 10px;
@@ -59,14 +104,16 @@
 }
 
 .artifacts_image {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .text-container {
     font-family: "Nunito", Arial, sans-serif, serif;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
 }
 
 .artifacts img:hover {
@@ -96,7 +143,7 @@
 @media (max-width: 1376px) {
     .artifacts {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         padding: 10px;
     }
