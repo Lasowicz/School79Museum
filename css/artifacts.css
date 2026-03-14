@@ -71,6 +71,11 @@
         width: auto;
     }
     .small_container_artifacts {
-        height: auto;
+        width: auto;
+    }
+
+    .small_container_artifacts img {
+        max-width: 100px;
+        max-height: 200px;
     }
 }

@@ -8,7 +8,7 @@
     justify-items: center;
 }
 .small_brief_containers {
-    height: 700px;
+    height: 800px;
     background: white;
     border-radius: 10px;
     padding: 16px;
@@ -31,8 +31,8 @@
     font-size: 14px;
     width: 400px;
     text-align: justify;
-
 }
+
 
 .small_brief_containers:hover {
     transform: scale(101%);
