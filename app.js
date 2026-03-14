@@ -154,19 +154,6 @@ tippy('[data-tippy-content]', {
 });
 
                                 // === ФИКС ВИДЕО ДЛЯ iPHONE (Safari) ===
-                                document.addEventListener('DOMContentLoaded', () => {
-                                    const video = document.getElementById('bgVideo');
-                                    if (video) {
-                                        video.muted = true;
-                                        video.autoplay = true;
-                                        video.loop = true;
-                                        video.playsInline = true;
-                                        video.setAttribute('playsinline', '');
-                                        video.setAttribute('webkit-playsinline', '');
-
-                                        // Принудительный запуск — это главное для iOS
-                                        video.play().catch(err => {
-                                            console.log('Autoplay iOS:', err); // можно оставить для отладки
-                                        });
-                                    }
-                                });
+                                const video = document.getElementById("bg-Video");
+                                video.muted = true;
+                                video.play();

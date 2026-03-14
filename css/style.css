@@ -1,19 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-
 @font-face {
     font-family: Nunito sans-serif serif;
     src: url(../fonts/Nunito-Regular.woff2);
@@ -359,7 +343,6 @@ h2, h3{
     text-align: center;
     align-items: center;
     justify-items: center;
-    flex-shrink: 0;
     margin-top: auto;
 }
 
