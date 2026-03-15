@@ -8,6 +8,8 @@
 
 body {
     background-image: url("/images/body_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .video-background {
