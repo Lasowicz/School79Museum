@@ -51,18 +51,10 @@
 }
 
 .title_video {
-    max-width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
-
-.title_video video {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 90vh;
-}
-
 
 @media (max-width: 768px) {
     .title_video video {
@@ -81,10 +73,6 @@
 .title_video video {
     touch-action: manipulation;
     -webkit-overflow-scrolling: touch;
-}
-
-.title_video video:: -webkit-media-controls {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
