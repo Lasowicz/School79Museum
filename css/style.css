@@ -6,33 +6,8 @@
 }
 
 
-
-
-.fullscreen-bg {
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background: url(/School79Museum/images/body_back.jpg) center/cover no-repeat;
-    /* НИКАКОГО fixed attachment здесь! */
-}
-
 html, body {
-    height: 100%;
-    margin: 0;
-}
-
-@supports (-webkit-overflow-scrolling: touch) {
-    .fullscreen-bg {
-        position: absolute;
-        height: 100dvh;   /* или даже 110dvh если режет снизу */
-    }
-}
-
-.content {
-    position: relative;
-    z-index: 1; /* Поднимаем контент над видео */
-    color: white; /* Контрастный цвет текста */
-    padding: 20px;
+    background: #000;
 }
                                                         /*МОДАЛКА НА ПРИВЕТСТВИЕ*/
 .welcome-modal {
