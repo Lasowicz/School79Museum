@@ -7,26 +7,26 @@
 
 
 body {
-    background-image: url("/School79Museum/images/body_back.jpg");
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    background-image: url("/images/body_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.bg {
-    position: fixed;
-    inset: 0;                   /* top:0; right:0; bottom:0; left:0; */
+.video-background {
+    position: fixed;          /* или absolute */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
     z-index: -1;
-    background: url(твоя-картинка.jpg) center center / cover no-repeat;
-    /* НЕ используй background-attachment: fixed здесь! */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+#bg-Video {
+    position: absolute;
+    top: 50%; left: 50%;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .content {
