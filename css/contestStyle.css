@@ -56,24 +56,6 @@
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .title_video video {
-        max-height: 70vh;
-        border-radius: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .title_video video {
-        max-height: 60vh;
-        border-radius: 4px; /
-    }
-}
-
-.title_video video {
-    touch-action: manipulation;
-    -webkit-overflow-scrolling: touch;
-}
 
 @media (max-width: 768px) {
     .img_preview:first-child,
